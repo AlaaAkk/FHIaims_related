@@ -437,7 +437,7 @@ will be replaced by name + counter, string
                                 + str(3)
                                 + " {} {} {}\n".format(nz[0], nz[1], nz[2]))
              elif options.Raman:
-                new_control.write(template_control+'compute_forces .true. \n'+'final_forces_cleaned '+'.true. \n'+'DFPT dielectric\n'+  "KS_method serial \n")
+                new_control.write(template_control+'compute_forces .true. \n'+'final_forces_cleaned '+'.true. \n'+'DFPT dielectric\n')
           else:
              if  options.IRRaman:
                  new_control.write(template_control+'compute_forces .true. \n'+'final_forces_cleaned '+'.true. \n'+'output dipole \n'+'DFPT polarizability\n')
